@@ -21,9 +21,9 @@ const Info = () => {
         let hour = d.getHours();
         if (hour > 16 && hour < 23) {
           if (dataValue.power1 > dataValue.power2) {
-            alert("Load 1 is higher than load 2");
+            alert("Please  Turn OFF Load 1 ");
           } else {
-            alert("Load 2 is higher than load 1");
+            alert("Please  Turn OFF Load 2");
           }
         }
       });
@@ -96,7 +96,7 @@ const Info = () => {
               >
                 <div class="card-header text-center">Load-1</div>
                 <div class="card-body text-primary text-center">
-                  <h5 class="card-title">Power</h5>
+                  <h5 class="card-title">Daily</h5>
                   <p class="card-text">{dataValue.taka}TK</p>
                 </div>
               </div>
@@ -170,7 +170,7 @@ const Info = () => {
               >
                 <div class="card-header text-center">Load-2</div>
                 <div class="card-body text-primary text-center">
-                  <h5 class="card-title">Power</h5>
+                  <h5 class="card-title">Daily</h5>
                   <p class="card-text">{dataValue.taka2}TK</p>
                 </div>
               </div>

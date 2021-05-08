@@ -69,17 +69,15 @@ const ChartData = ({ dataValue }) => {
     clearInterval(elementValue);
   };
   const data = [
-    { name: 0, power2: 4000, power1: 2400 },
-    { name: 1, power2: 3000, power1: 1398 },
-    { name: 2, power2: 2000, power1: 9800 },
-    { name: 3, power2: 2780, power1: 3908 },
-    { name: 4, power2: 1890, power1: 4800 },
-    { name: 5, power2: 2390, power1: 3800 },
-    { name: 6, power2: 3490, power1: 4300 },
-    { name: 7, power2: 1190, power1: 2300 },
-    { name: 8, power2: 3330, power1: 4300 },
-    { name: 9, power2: 3490, power1: 3300 },
-    { name: 10, power2: 2490, power1: 3700 },
+    { name: 16, power2: 0, power1: 0 },
+    { name: 17, power2: 50, power1: 40 },
+    { name: 18, power2: 37, power1: 60 },
+    { name: 19, power2: 54, power1: 45 },
+    { name: 20, power2: 40, power1: 65 },
+    { name: 21, power2: 62, power1: 40 },
+    { name: 22, power2: 0, power1: 0 },
+    { name: 23, power2: 0, power1: 0 },
+    { name: 24, power2: 0, power1: 0 },
   ];
   // let result1 = 0;
   // let result2 = 0;
@@ -103,11 +101,11 @@ const ChartData = ({ dataValue }) => {
 
   return (
     <div id="container" ref={containerRef}>
-      <h2>Load Curve</h2>
+      <h2>Load Curve (X axis Hours And Y axis Watt)</h2>
       <br />
       <LineChart
         ref={ref} // Save the ref of the chart
-        data={chartValue}
+        data={data}
         height={500}
         width={800}
         margin={{ top: 5, right: 30, left: 20, bottom: 25 }}

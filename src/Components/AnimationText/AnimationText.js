@@ -16,7 +16,7 @@ const AnimationText = () => {
   return (
     <div key={key}>
       <animated.div style={scrolling}>
-        <p style={{ color: "red" }}>Please help Us</p>
+        <p style={{ color: "red" }}>**Notice**</p>
       </animated.div>
     </div>
   );

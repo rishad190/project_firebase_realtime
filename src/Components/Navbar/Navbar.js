@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AnimationText from "../AnimationText/AnimationText";
+import icon from "../../images/Icon.png";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Power House
+            <img style={{ width: "50px" }} src={icon} alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -45,6 +46,11 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link to="/chart" className="nav-link">
                   Chart
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/meter" className="nav-link">
+                  Meter
                 </Link>
               </li>
               <li className="nav-item">

@@ -15,33 +15,21 @@ const YearlyCharts = () => {
   const data = [
     {
       name: "2020",
-      Power1: 4000,
-      Power2: 2400,
-      amt: 2400,
     },
     {
       name: "2021",
-      Power1: 3000,
-      Power2: 1398,
+      Power1: 80,
+      Power2: 75,
       amt: 2210,
     },
     {
       name: "2022",
-      Power1: 2000,
-      Power2: 9800,
-      amt: 2290,
     },
     {
       name: "2023",
-      Power1: 2780,
-      Power2: 3908,
-      amt: 2000,
     },
     {
       name: "2024",
-      Power1: 1890,
-      Power2: 4800,
-      amt: 2181,
     },
   ];
   return (

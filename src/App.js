@@ -8,6 +8,7 @@ import Info from "./Components/Info/Info";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Navbar from "./Components/Navbar/Navbar";
 import AllCharts from "./Components/AllCharts/AllCharts";
+import Meter from "./Components/Meter/Meter";
 export const UserContext = createContext();
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/meter">
+              <Meter></Meter>
             </Route>
             <Route path="/chart">
               <AllCharts></AllCharts>
