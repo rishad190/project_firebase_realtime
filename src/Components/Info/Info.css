@@ -1,0 +1,5 @@
+.box_container_data {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -100,7 +100,7 @@ const ChartData = ({ dataValue }) => {
   // });
 
   return (
-    <div id="container" ref={containerRef}>
+    <div id="container" className="box_container_data" ref={containerRef}>
       <h2>Load Curve (X axis Hours And Y axis Watt)</h2>
       <br />
       <LineChart
@@ -127,8 +127,18 @@ const ChartData = ({ dataValue }) => {
         <button className="btn btn-primary btn-lg" onClick={handleDownload}>
           Download
         </button>
-        <button onClick={handleDataStart}>Start</button>
-        <button onClick={handleDataStop}>Stop</button>
+        <button
+          className="btn btn-primary btn-lg ms-2"
+          onClick={handleDataStart}
+        >
+          Start
+        </button>
+        <button
+          className="btn btn-primary btn-lg  ms-2"
+          onClick={handleDataStop}
+        >
+          Stop
+        </button>
       </span>
       <br />
     </div>

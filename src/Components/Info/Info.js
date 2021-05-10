@@ -3,6 +3,7 @@ import firebase from "firebase/app";
 import firebaseConfig from "../../firebase.Config";
 import "firebase/database";
 import ChartData from "../ChartData/ChartData";
+import "./Info.css";
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
@@ -54,12 +55,15 @@ const Info = () => {
   return (
     <div className="container">
       <div className="row">
-        <button className="btn btn-outline-warning w-100  mt-5 mb-5 ms-5">
-          ON SERVER
-        </button>
         <div className="col-md-12">
+          <button className="btn btn-outline-warning w-100  mt-5 mb-5 ">
+            ON SERVER
+          </button>
+        </div>
+
+        <div className="col-md-12 ">
           <div className="row">
-            <div className="d-flex justify-content-center">
+            <div className="  box_container_data">
               <div
                 class="card border-primary mb-3 m-5"
                 style={{ width: "300px" }}
@@ -133,7 +137,7 @@ const Info = () => {
 
           {/* 2nd load  start here */}
           <div className="row">
-            <div className="d-flex justify-content-center">
+            <div className="box_container_data">
               <div
                 class="card border-primary mb-3 m-5"
                 style={{ width: "300px" }}
