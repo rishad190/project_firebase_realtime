@@ -36,12 +36,12 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/meter">
+            <PrivateRoute path="/meter">
               <Meter></Meter>
-            </Route>
-            <Route path="/chart">
+            </PrivateRoute>
+            <PrivateRoute path="/chart">
               <AllCharts></AllCharts>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path="/info">
               <Info></Info>
             </PrivateRoute>
